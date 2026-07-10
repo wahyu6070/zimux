@@ -1,0 +1,85 @@
+# Privacy Policy — zimux
+
+**Last updated: 10 July 2026**
+
+zimux ("the app", "we", "us") is a terminal emulator and file manager for
+Android. This Privacy Policy explains what data the app handles and how. By
+using zimux you agree to this policy.
+
+## Summary
+
+- zimux does **not** collect, transmit, or sell any personal data.
+- There are **no analytics, no advertising, and no third-party tracking SDKs**.
+- Everything you do — files, terminal sessions, installed packages — stays
+  **on your device**.
+
+## Data We Collect
+
+**None.** zimux does not create an account, does not ask for your identity, and
+does not send your files, commands, keystrokes, or usage statistics to us or to
+any server we control. We have no servers that receive your data.
+
+## On-Device Data
+
+The following data is stored only locally on your device and is never uploaded
+by the app:
+
+- **Files and folders** you browse, create, copy, move, extract, or delete with
+  the file manager.
+- **Terminal sessions** and the Linux environment (e.g. the Ubuntu rootfs
+  installed via proot/chroot), including any files, packages, and command
+  history you create inside it.
+- **App settings** (theme, language, view options, remembered "open with"
+  choices) saved in the app's private storage.
+
+You can remove this data at any time by deleting the relevant files, clearing
+the app's storage, or uninstalling the app.
+
+## Permissions
+
+zimux requests only the permissions it needs to work:
+
+- **Storage / Manage all files** (`MANAGE_EXTERNAL_STORAGE`,
+  `READ/WRITE_EXTERNAL_STORAGE`) — to let the file manager and terminal read and
+  write files you choose. Files are accessed locally and never uploaded.
+- **Internet & network state** (`INTERNET`, `ACCESS_NETWORK_STATE`) — used only
+  when **you** ask for it: downloading a Linux distribution (rootfs), installing
+  packages with tools like `apt`, or when you run network commands (e.g. `curl`,
+  `git`, `ssh`) inside the terminal. zimux itself sends no data.
+- **Install packages** (`REQUEST_INSTALL_PACKAGES`) — to let you install
+  packages/APKs you explicitly open.
+- **Notifications** (`POST_NOTIFICATIONS`) and **foreground service**
+  (`FOREGROUND_SERVICE`, `FOREGROUND_SERVICE_DATA_SYNC`) — to show progress for
+  long-running file operations (copy, extract, archive) so the system does not
+  interrupt them.
+
+## Network & Third Parties
+
+zimux has no backend of its own. When you download a Linux distribution or
+install packages from within the terminal, your device connects **directly** to
+the third-party servers you request (for example, distribution or package
+mirrors). Those connections are subject to the privacy policies of whoever
+operates those servers. zimux does not add tracking to these requests.
+
+## Children
+
+zimux is a general-purpose developer tool and is not directed at children. It
+collects no personal data from anyone, including children.
+
+## Security
+
+Because your data never leaves your device through the app, its security depends
+on your device's own protections (lock screen, encryption, etc.). Please keep
+your device secure and be careful when granting the app storage access or
+running commands from untrusted sources.
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. Changes will be posted at
+the URL where this policy is published, with an updated "Last updated" date.
+
+## Contact
+
+If you have questions about this Privacy Policy, contact:
+
+**Email:** zixchiver@gmail.com
