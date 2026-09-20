@@ -15,15 +15,26 @@ from the in-app switcher.
 
 ## Download
 
-Grab the APK from the [latest release](https://github.com/wahyu6070/zimux/releases/latest),
-then install it on your device.
+There are two channels.
+
+**Stable** — the [latest release](https://github.com/wahyu6070/zimux/releases/latest).
+This is the one to use.
+
+**Development** — the rolling [`dev` prerelease](https://github.com/wahyu6070/zimux/releases/tag/dev),
+rebuilt from the current source. Useful for trying a fix before it ships, at the
+price of being untested. The URL never changes, so you can bookmark it:
+
+```
+https://github.com/wahyu6070/zimux/releases/download/dev/zimux-dev.apk
+```
 
 A single APK covers `arm64-v8a`, `armeabi-v7a`, `x86` and `x86_64`. Android 8.0
 (API 26) or newer.
 
-> Releases are signed with the project's own key. Android will refuse to install
-> over a build signed with a different key, so uninstall any previous copy that came
-> from elsewhere first.
+> **The two channels are signed with different keys**, so Android will not install
+> one over the other — switching between them means uninstalling first, which
+> deletes the app's data including any installed Ubuntu rootfs. Pick a channel and
+> stay on it. Within a channel, updates install over the previous build normally.
 
 ---
 
